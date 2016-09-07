@@ -15,4 +15,11 @@ npm start
 Released under the MIT license.
 
 ==============
-### Work in progres
+### TODOs
+
+* Rewrite gulp tasks to better fit new folder structure
+* Auto-inject vendor and app scripts in front-end app
+* Limit number of results shown initially (save all items in storage)
+* Add filters & sorters above font list
+* Add download font functionality
+* Add settings (from where users can set download folder)

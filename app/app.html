@@ -1,28 +1,32 @@
 <!doctype html>
-<html>
+<html ng-app="NixFont">
 <head>
     <meta charset="utf-8">
     <title>NixFont Manager</title>
 
-    <link href="stylesheets/main.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" />
+    <link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/main.css" rel="stylesheet" type="text/css" />
 
-    <script src="helpers/context_menu.js"></script>
-    <script src="helpers/external_links.js"></script>
-    <script src="app.js"></script>
-
-    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+    <script>if (typeof module === 'object') { window.module = module; module = undefined; }</script>
 </head>
 <body>
+    <div ui-view></div>
 
-    <div class="container">
-        <p class="subtitle">
-            Welcome to <a href="http://electron.atom.io" class="js-external-link">Electron</a> app running on this magnificent <strong id="platform-info"></strong> machine.
-        </p>
-        <p class="subtitle">
-            You are in <strong id="env-name"></strong> environment.
-        </p>
-    </div>
+    <!-- Libs -->
+    <script type="text/javascript" src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="./bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="./bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <!-- Include Angular here -->
+    <!-- App -->
+    <script type="text/javascript" src="./feapp/app.module.js"></script>
+    <script type="text/javascript" src="./feapp/app.router.js"></script>
+    <script type="text/javascript" src="./feapp/app.constants.js"></script>
+    <script type="text/javascript" src="./feapp/services/api.service.js"></script>
+    <script type="text/javascript" src="./feapp/shared/toolbar/toolbar.directive.js"></script>
+    <script type="text/javascript" src="./feapp/shared/single-font/single-font.directive.js"></script>
+    <script type="text/javascript" src="./feapp/components/layout/layout.controller.js"></script>
+    <script type="text/javascript" src="./feapp/components/home/home.controller.js"></script>
 </body>
 </html>

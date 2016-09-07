@@ -27,7 +27,9 @@ app.on('ready', () => {
 
   let mainWindow = new ElectronWindow('main', {
     width: 1000,
-    height: 600
+    height: 600,
+    frame: false,
+    maximizable: false
   })
 
   mainWindow.win.loadURL('file://' + __dirname + '/app.html');

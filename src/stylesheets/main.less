@@ -1,25 +1,104 @@
-html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: sans-serif;
+    padding-top: 100px;
 }
 
-a {
-    text-decoration: none;
+.container-content {
+    overflow: auto;
+    height: calc(100vh - 15%);
 }
 
-.container {
-    text-align: center;
+.form-control {
+    border-radius: 0;
+    border: 1px solid #DDD;
+    box-shadow: none;
 }
 
-.subtitle {
-    color: gray;
+.toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background: #EEE;
+    background-image: url('../public/images/background.jpeg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    .toolbar-search {
+        width: 200px;
+        position: absolute;
+        right: 10px;
+        top: 40px;
+
+        .form-control {
+            color: #222;
+            border: 1px solid #FFF;
+            background: rgba(255, 255, 255, 0.8);
+            transition: background 0.5s;
+
+            &:focus,
+            &:active {
+                box-shadow: none;
+                background: #FFF;
+            }
+        }
+
+    }
+
+    .toolbar-draggable {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 70%;
+        height: 90px;
+        -webkit-app-region: drag;
+    }
+}
+
+.title {
+    font-size: 24px;
+    text-shadow: none;
+    font-weight: 300;
+    color: #FFF;
+    padding: 0 15px;
+    line-height: 90px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.single-font {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #DDD;
+
+    .single-font__category {
+        background: #EEE;
+        color: #777;
+        font-size: 12px;
+        padding: 3px 5px;
+    }
+}
+
+.btn-close {
+    width: 16px;
+    height: 16px;
+    background: orangeRed;
+    border: 1px solid orangeRed;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius: 50%;
+}
+
+.btn-minimize {
+    width: 16px;
+    height: 16px;
+    background: orange;
+    border: 1px solid orange;
+    display: block;
+    position: absolute;
+    right: 35px;
+    top: 10px;
+    border-radius: 50%;
 }
