@@ -1,0 +1,13 @@
+{
+  "name": "electron-boilerplate",
+  "productName": "NixFont",
+  "description": "Google Font Manager & Downloader",
+  "version": "0.0.1",
+  "author": "Gjorge Karakabakov <gorgekara@gmail.com>",
+  "homepage": "http://example.com",
+  "license": "MIT",
+  "main": "background.js",
+  "dependencies": {
+    "fs-jetpack": "^0.9.0"
+  }
+}
