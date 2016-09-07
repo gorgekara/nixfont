@@ -10,13 +10,17 @@ NixFont.directive('singleFont', function () {
     templateUrl: './feapp/shared/single-font/single-font.html',
     link: function (scope, element, attrs) {
 
+      scope.toggleParagraph = function () {
+        scope.font.showParagraph = !scope.font.showParagraph;
+      };
+
       $('head').prepend([
         '<style type="text/css">',
           '@font-face {',
             'font-family: "', scope.font.family ,'";',
             'src: local("☺"), url("', scope.font.files.regular , '") format("truetype");',
           '}',
-          'h4.f-', scope.index , ' {',
+          '.f-', scope.index , ' {',
             'font-family: ', scope.font.family , ' !important;',
           '}',
         '</style>'].join(''));

@@ -1,13 +1,15 @@
 <div class="toolbar">
-  <div class="toolbar-draggable"></div>
-  <div class="title">NixFont Manager</div>
-  
-  <form class="toolbar-form toolbar-search">
-    <div class="form-group">
-      <input type="text" class="form-control" placeholder="Search.." ng-model="query" />
-    </div>
-  </form>
+  <div class="toolbar-overlay">
+    <div class="toolbar-draggable"></div>
+    <div class="title">NixFont Manager</div>
+    
+    <form class="toolbar-form toolbar-search">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search.." ng-model="query" />
+      </div>
+    </form>
 
-  <button type="button" class="btn-minimize" ng-click="minimize()"></button>
-  <button type="button" class="btn-close" ng-click="close()"></button>
+    <button type="button" class="btn-minimize" ng-click="minimize()"></button>
+    <button type="button" class="btn-close" ng-click="close()"></button>
+  </div>
 </div>
