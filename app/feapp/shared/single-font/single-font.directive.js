@@ -13,6 +13,7 @@ NixFont.directive('singleFont', function () {
     },
     templateUrl: './feapp/shared/single-font/single-font.html',
     link: function (scope, element, attrs) {
+      scope.font.cls = scope.font.family.trim().toLowerCase().replace(' ', '-');
 
       scope.downloadFont = function () {
         var selectedFolder = dialog.showOpenDialog({
@@ -48,7 +49,7 @@ NixFont.directive('singleFont', function () {
             'font-family: "', scope.font.family ,'";',
             'src: local("☺"), url("', scope.font.files.regular , '") format("truetype");',
           '}',
-          '.f-', scope.index , ' {',
+          '.f-', scope.font.cls , ' {',
             'font-family: ', scope.font.family , ' !important;',
           '}',
         '</style>'].join(''));

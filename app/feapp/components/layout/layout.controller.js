@@ -5,7 +5,7 @@ NixFont.controller('LayoutController', function ($scope, ConnectionService) {
   }
 
   function error() {
-    // $scope.notConnected = true;
+    $scope.notConnected = true;
   }
 
   ConnectionService.check(success, error);

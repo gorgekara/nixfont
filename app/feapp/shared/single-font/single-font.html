@@ -1,12 +1,12 @@
 <div class="single-font">
   <span ng-if="!font.removed">
-    <h4 class="f-{{ index }}">{{ font.family }}</h4>
+    <h4 class="f-{{ font.cls }}">{{ font.family }}</h4>
     <span class="single-font__category">{{ font.category }}</span>
 
     <a href="https://fonts.google.com/specimen/{{ font.family }}" class="js-external-link btn btn-default btn-gp"><span class="ion ion-link"></span></a>
     <button type="button" class="btn btn-default btn-download" ng-click="downloadFont()"><span class="ion ion-android-folder"></span></button>
     <button type="button" class="btn btn-default btn-p" ng-click="toggleParagraph()"><span class="ion ion-android-list"></span></button>
 
-    <p class="single-font__paragraph f-{{ index }}" ng-show="font.showParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio commodi at dolor voluptatum, omnis mollitia velit recusandae non temporibus numquam corporis, ab magni tempora molestias illum ut placeat veniam necessitatibus.</p>
+    <p class="single-font__paragraph f-{{ font.cls }}" ng-show="font.showParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio commodi at dolor voluptatum, omnis mollitia velit recusandae non temporibus numquam corporis, ab magni tempora molestias illum ut placeat veniam necessitatibus.</p>
   </span>
 </div>

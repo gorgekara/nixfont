@@ -1,5 +1,10 @@
-# NixFont
+# NixFont Downloader
 ==============
+
+NixFont Downloader is a small app that allows you to browse, preview, search and download fonts from the Google Web Fonts archive.
+
+![image](http://i.imgur.com/cq9XZsS.png)
+
 
 # Quick start
 The only development dependency of this project is [Node.js](https://nodejs.org). So just make sure you have it installed.

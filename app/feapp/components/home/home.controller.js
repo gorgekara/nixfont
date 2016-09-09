@@ -3,6 +3,7 @@ NixFont.controller('HomeController', function ($rootScope, $scope, ApiService, F
 
   $rootScope.$on('search', function (event, searchResults) {
     $scope.empty = false;
+    $scope.fonts = [];
 
     if (!searchResults) {
       FontService.clear();
