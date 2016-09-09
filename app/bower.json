@@ -20,6 +20,8 @@
     "jquery": "~3.1.0",
     "bootstrap": "~3.3.7",
     "angular-ui-router": "~0.3.1",
-    "Ionicons": "ionicons#~2.0.1"
+    "Ionicons": "ionicons#~2.0.1",
+    "angular-local-storage": "^0.5.0",
+    "lodash": "^4.15.0"
   }
 }

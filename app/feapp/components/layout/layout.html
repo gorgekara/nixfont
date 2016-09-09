@@ -1,2 +1,9 @@
 <toolbar></toolbar>
-<div class="container-fluid container-content" ui-view></div>
+<div class="container-fluid container-content" ui-view ng-if="!notConnected"></div>
+
+<div class="container container--notconnected" ng-if="notConnected">
+    <div class="jumbotron">
+        <h1><span class="ion ion-alert-circled"></span> Not Connected</h1>
+        <p>Please connect to the Internet to see a list of all fonts.</p>
+    </div>
+</div>

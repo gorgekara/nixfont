@@ -1,3 +1,7 @@
-<div class="fonts">
-  <single-font font="font" index="{{ $index }}" ng-repeat="font in fonts|filter:query"></single-font>
+<div class="fonts container--notconnected" nix-scroll-down="next()" nix-scroll-up="previous()">
+    <single-font font="font" index="{{ $index }}" ng-repeat="font in fonts track by $index"></single-font>
+    <div class="jumbotron" ng-show="empty">
+        <h1><span class="ion ion-alert-circled"></span> No results found</h1>
+    </div>
+    <button class="btn btn-lg btn-block btn-default btn-next" type="button" ng-click="next()" ng-hide="nextDisabled">More</button>
 </div>

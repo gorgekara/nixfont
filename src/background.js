@@ -26,7 +26,7 @@ app.on('ready', () => {
   setApplicationMenu();
 
   let mainWindow = new ElectronWindow('main', {
-    width: 1000,
+    width: 800,
     height: 600,
     frame: false,
     maximizable: false
