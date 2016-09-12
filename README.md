@@ -26,7 +26,15 @@ Released under the MIT license.
 
 * Rewrite gulp tasks to better fit new folder structure
 * Auto-inject vendor and app scripts in front-end app
-* Limit number of results shown initially (save all items in storage)
+* ~~Limit number of results shown initially (save all items in storage)~~
 * Add filters & sorters above font list
-* Add download font functionality
+* ~~Add download font functionality~~
 * Add settings (from where users can set download folder)
+* Restructure project, remove extra stuff
+* Rewrite front-end with React [Future]
+* Create cool icon
+* Add favorite fonts functionality (heart icon in toolbar)
+* Add different font types
+* Improve font paragraph preview
+* Add about page
+* Add black theme (fonts color up white, background goes black)
