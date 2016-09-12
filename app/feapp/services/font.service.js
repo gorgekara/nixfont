@@ -60,7 +60,8 @@ NixFont.service('FontService', function (CONSTANTS, $http) {
   };
 
   self.get = function () {
-    return self.fonts || JSON.parse(localStorage.getItem('fonts'));
+    var fonts = typeof localStorage.getItem('fonts') === 'undefined' ? '{}' : localStorage.getItem('fonts');
+    return self.fonts || JSON.parse(fonts);
   };
 
   self.next = function () {

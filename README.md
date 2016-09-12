@@ -3,6 +3,8 @@
 
 NixFont Downloader is a small app that allows you to browse, preview, search and download fonts from the Google Web Fonts archive.
 
+Download: [Linux x64](http://snapbin.net:1337/uploads/nix-font-downloader-0.0.1.deb)
+
 ![image](http://i.imgur.com/cq9XZsS.png?1)
 
 

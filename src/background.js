@@ -1,11 +1,9 @@
 import { app, Menu } from 'electron';
-import request from 'request';
 
 import { devMenuTemplate } from './menu/dev_menu_template';
 import { editMenuTemplate } from './menu/edit_menu_template';
 import ElectronWindow from './helpers/electron-window';
 import env from './env';
-import FontFetcher from './helpers/font-fetcher';
 
 function setApplicationMenu() {
   let menus = [editMenuTemplate];
@@ -30,7 +28,7 @@ app.on('ready', () => {
     height: 600,
     frame: false,
     maximizable: false
-  })
+  });
 
   mainWindow.win.loadURL('file://' + __dirname + '/app.html');
 });

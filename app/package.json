@@ -1,16 +1,15 @@
 {
-  "name": "electron-boilerplate",
-  "productName": "NixFont",
+  "name": "nix-font-downloader",
+  "productName": "NixFont Downloader",
   "description": "Google Font Manager & Downloader",
   "version": "0.0.1",
   "author": "Gjorge Karakabakov <gorgekara@gmail.com>",
-  "homepage": "http://example.com",
+  "homepage": "http://snapbin.net",
   "license": "MIT",
   "main": "background.js",
   "dependencies": {
-    "angular": "^1.5.8",
-    "bootstrap": "^3.3.7",
     "fs-jetpack": "^0.9.0",
-    "jquery": "^3.1.0"
+    "node-notifier": "^4.6.1",
+    "request": "^2.74.0"
   }
 }

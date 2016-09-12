@@ -57,7 +57,8 @@ NixFont.controller('HomeController', function ($rootScope, $scope, ApiService, F
   function getFonts() {
     ApiService.get({
       success: function (data) {
-        FontService.save(data.item);
+        FontService.save(data.items);
+        $scope.fonts = FontService.next();
       }
     });
   }
